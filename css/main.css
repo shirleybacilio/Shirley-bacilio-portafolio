@@ -2,7 +2,7 @@
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
 
-    
+  /*  
  #page_effect {
     -webkit-animation: fadein 2.5s; /* Safari and Chrome */
     -moz-animation: fadein 2.5s; /* Firefox */
@@ -22,7 +22,9 @@
     position: relative; 
 }
 
-
+.fa-code , .fa-life-ring , .fa-mobile , .fa-desktop {
+    font-size: 36px;
+}
 
     
     
