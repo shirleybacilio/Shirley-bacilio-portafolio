@@ -1,21 +1,3 @@
-/*Global*/
-*{
-	font-family: "OpenSans-Light" Helvetica;
-}
-
-@font-face{
-	font-family: OpenSans-Regular;
-	src: url(../fonts/Open/OpenSans-Regular.ttf);
-}
-@font-face{
-	font-family: OpenSans-Light;
-	src: url(../fonts/Open/OpenSans-Light.ttf);
-}
-@font-face{
-	font-family: OpenSans-Bold;
-	src: url(../fonts/Open/OpenSans-Bold.ttf);
-}
-
 /* Shortcuts */
 
 .pd-0 {

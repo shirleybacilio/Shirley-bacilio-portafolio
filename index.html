@@ -6,14 +6,23 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Shirley Bacilio</title>
+  | <link href="css/main.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
     <link href="css/utilities.css" rel="stylesheet">
     <link rel="stylesheet" href="fonts/fontawesome-webfont.eot">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/utilities.css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="fonts/glyphicons-halfings-regular.eot" rel="stylesheet">
+    <link href="fonts/glyphicons-halfings-regular.svg" rel="stylesheet">
+    <link href="fonts/glyphicons-halfings-regular.ttf" rel="stylesheet">
+    <link href="fonts/glyphicons-halfings-regular.woff" rel="stylesheet">
+    <link href="fonts/glyphicons-halfings-regular.woff2" rel="stylesheet">
 
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -44,19 +53,19 @@
                 <a class="active" href="index.html">Home</a>
               </li>
               <li>
-                <a href="about-us.html">Sobre mi</a>
+                <a href="#about">Sobre mi</a>
               </li>
               <li>
-                <a href="servicios.html">Servicios</a>
+                <a href="#servicios">Servicios</a>
               </li>
               <li>
-                <a href="portafolio.html">Portafolio</a>
+                <a href="#portafolio">Portafolio</a>
               </li>
               <li>
-                <a href="blog.html">Blog</a>
+                <a href="#Blog">Blog</a>
               </li>
               <li>
-                <a href="contact.html">Contact</a>
+                <a href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -64,16 +73,28 @@
       </nav>
     </header>
     <section class="hero-image pt-10">
-      <div id="home" class="container text-center pt-30">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <h1>Shirley Bacilio</h1>
-              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+      <div class="opacity">
+        <div id="home" class="container text-center pt-30">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 titulo ">
+                  <p>Mi portafolio</p>
+                  <h1 class="animated fadeInUp">Shirley Bacilio</h1>
+                  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
+    <section id="about" class="about">
+      <div class="container text-center pt-5 pb-5">
+        <div class="row">
+        <h3 class="pt-5">Sobre mi</h3>
+          <img class="img-responsive pt-5 pb-5" src="img/about/yo3.jpg" alt="soy-yo">
+            <p class="pb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est in, obcaecati nulla amet distinctio, sapiente itaque porro neque at laudantium temporibus quam magnam. Animi rem maxime, autem quaerat, facilis porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sint harum sed, aliquam odit aperiam deleniti quae ut dolore. Magni quibusdam, laudantium facere voluptates cum saepe atque fugiat vero commodi.</p>
+        </div>
+      </div>      
     </section>
     <section id="servicios">
       <div class="container text-center">
@@ -94,209 +115,26 @@
             <h3>Diseño Responsive</h3>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-12">
+        <div class="row int">
+          <div class="col-sm-6">
            <a href="#"><i class="fa  fa-5x fa-life-ring"></i></a> 
-            <h3>Mantenimiento</h3>
+            <h3>Maquetación</h3>
+          </div>
+          <div class="col-sm-6">
+           <a href="#"><i class="fa  fa-5x fa-camera-retro"></i></a> 
+            <h3>Fotografía</h3>
           </div>
         </div>
       </div>
     </section>
-      
-      
-      <!--
-      <section id="latest" class="bg-grey">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3 col-sm-6">
-              <h3>Our Latest Project</h3>
-              <p>Pallentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-              <div class="btn-group">
-                <div class="btn btn-left btn-danger">
-                  <span aria-hidden="true">&lt;</span>
-                </div>
-                <div class="btn btn-right btn-danger">
-                  <span aria-hidden="true">&gt;</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-2 col-xs-4">
-              <div class="item">
-                <img src="images/portfolio/recent/item1.png" class="img-responsive">
-                <h5 class="visible-lg">Nova - Corporate site template</h5>
-                <h5 class="hidden-lg">Nova -  Corpor...</h5>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-2 col-xs-4">
-              <div class="item">
-                <img src="images/portfolio/recent/item2.png" class="img-responsive">
-                <h5 class="visible-lg">Fornax - Apps site template</h5>
-                <h5 class="hidden-lg">Fornax-Apps...</h5>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-2 col-xs-4">
-              <div class="item">
-                <img src="images/portfolio/recent/item3.png" class="img-responsive">
-                <h5 class="visible-lg">Flat Theme - Bussiness Theme</h5>
-                <h5 class="hidden-lg">Flat Theme - B...</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>   
-      <section id="testimonial" class="bg-red">
-        <div class="container">
-          <h2 class="text-center">What our clients say</h2>
-          <h5 class="text-center mb">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</h5>
-          <div class="row">
-            <div class="col-sm-6">
-              <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus temporibus eos illum.</p>
-                <small> Someone famous in source tittle</small>
-              </blockquote>
-            </div>
-            <div class="col-sm-6">
-               <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus temporibus eos illum.</p>
-                <small> Someone famous in source tittle</small>
-              </blockquote>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6">
-               <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus temporibus eos illum.</p>
-                <small> Someone famous in source tittle</small>
-              </blockquote>
-            </div>
-            <div class="col-sm-6">
-               <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus temporibus eos illum.</p>
-                <small> Someone famous in source tittle</small>
-              </blockquote>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="pre-footer" class="navbar-inverse">
-          <div class="container">
-            <div class="row pd">
-              <div class="col-sm-3">
-                <h4>About Us</h4>
-                <p>
-                  Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.  Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet ante.
-                </p>
-                <br>
-                <p>Pellentesque habitant morbi tristique senectus.</p>
-              </div>
-              <div class="col-sm-3">
-                <h4>Company</h4>
-                <ul class="list-unstyled">
-                  <li>
-                    <a href="#">&gt; Company Overview</a>
-                  </li>
-                  <li>
-                    <a href="#">&gt; Meet The Team</a>
-                  </li>
-                  <li>
-                    <a href="#">&gt; Our Awesome Partners</a>
-                  </li>
-                  <li>
-                    <a href="#">&gt; Our Services</a>
-                  </li>
-                  <li>
-                    <a href="#">&gt; Frequently Asked Questions</a>
-                  </li>
-                  <li>
-                    <a href="#">&gt; Contact Us</a>
-                  </li>
-                  <li>
-                    <a href="#">&gt; Privacy Policy</a>
-                  </li>
-                  <li>
-                    <a href="#">&gt; Terms of Use</a>
-                  </li>
-                  <li>
-                    <a href="#">&gt; Copyright</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-sm-3">
-                <h4>Latest Blog</h4>
-                <div class="media">
-                  <div class="pull-left">
-                    <img src="images/blog/thumb1.jpg" class="img-responsive">
-                  </div>
-                  <div class="media-body">
-                    <p><a>Pellentesque habitant morbi tristique senectus</a></p>
-                    <small>Posted 17 Aug 2013</small>
-                  </div>
-                </div>
-                <div class="media">
-                  <div class="pull-left">
-                    <img src="images/blog/thumb2.jpg" class="img-responsive">
-                  </div>
-                  <div class="media-body">
-                    <p><a>Pellentesque habitant morbi tristique senectus</a></p>
-                    <small>Posted 17 Aug 2013</small>
-                  </div>
-                </div>
-                <div class="media">
-                  <div class="pull-left">
-                    <img src="images/blog/thumb3.jpg" class="img-responsive">
-                  </div>
-                  <div class="media-body">
-                    <p><a>Pellentesque habitant morbi tristique senectus</a></p>
-                    <small>Posted 17 Aug 2013</small>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-3">
-                <h4>Address</h4>
-                <strong>Twitter, Inc.</strong>
-                <br>
-                <span>795 folson Ave, Suite 600</span>
-                <br>
-                <span>San Francisco CA 94107</span>
-                <br>
-                <span>P: (123) 456-7890</span>
-                <h4 class="mt">Newsletter</h4>
-                <div class="input-group has-warning">
-                  <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
-                  <a class="input-group-addon" id="basic-addon2">Go!</a>
-                </div>
-              </div>
-            </div>
-          </div>
-      </section>
-    <footer class="active">
+    <section>
       <div class="container">
         <div class="row">
-          <div class="col-sm-6">
-            <p>© 2013 ShapeBootstrap. All Rights Reserved</p>
-          </div>
-          <div class="col-sm-6">
-            <ul class="list-inline pull-right">
-              <li>
-                <a href="index.html">Home</a>
-              </li>
-              <li>
-                <a href="about-us.html">About Us</a>
-              </li>
-              <li>
-                <a href="contact-us.html">Contact Us</a>
-              </li>
-              <li>
-                <a class="button-up" onclick='subir();return false' title='Ir Arriba' href="#">
-                  <i class="icon-chevron-up"></i>
-                </a>
-              </li>
-            </ul>
-          </div> 
+          
         </div>
       </div>
-    </footer>
-      -->
+    </section>
+
     <script language='javascript' type='text/javascript'>    
       var arriba;
       function subir() {
