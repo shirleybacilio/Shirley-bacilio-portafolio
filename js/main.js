@@ -9,10 +9,6 @@ jQuery(function ($) {
             $(this).css('margin-top', ($('#main-slider').height() - $(this).height()) / 2);
         });
     });
-    
-//fade
-<div id="page_effect">
-</div>
 
 //scroll
 $(function() {
@@ -64,4 +60,3 @@ jQuery(function ($) {
     });
 
 
-     

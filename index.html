@@ -16,6 +16,7 @@
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/utilities.css">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="fonts/glyphicons-halfings-regular.eot" rel="stylesheet">
@@ -45,12 +46,13 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">Shirley Bacilio</a>
+            <a class="navbar-brand" href="index.html"><i class="fa fa-github-alt"></i> ...Shirley</a>
           </div>
           <div class="collapse navbar-collapse" id="collapse">
             <ul class="nav navbar-nav navbar-right">
               <li>
-                <a class="active" href="index.html">Home</a>
+
+                <a class="active img-circle" href="index.html">Home</a>
               </li>
               <li>
                 <a href="#about">Sobre mi</a>
@@ -59,7 +61,7 @@
                 <a href="#servicios">Servicios</a>
               </li>
               <li>
-                <a href="#portafolio">Portafolio</a>
+                <a href="#habilidades">Portafolio</a>
               </li>
               <li>
                 <a href="#Blog">Blog</a>
@@ -72,15 +74,17 @@
         </div>
       </nav>
     </header>
-    <section class="hero-image pt-10">
+    <div id="page_effect">
+      <section class="hero-image pt-10">
       <div class="opacity">
         <div id="home" class="container text-center pt-30">
           <div class="container">
             <div class="row">
-              <div class="col-sm-12 titulo ">
-                  <p>Mi portafolio</p>
+              <div class="col-sm-12 titulo">
                   <h1 class="animated fadeInUp">Shirley Bacilio</h1>
                   <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                  <br>
+                  <a class="scroll-down animated bounceInDown" href="#about"><i class="fa fa-4x fa-chevron-circle-down"onclick='bajar();return true' title='Ir Abajo'></i></a>
               </div>
             </div>
           </div>
@@ -127,14 +131,111 @@
         </div>
       </div>
     </section>
+    <section id="habilidades" class="bg-gray">
+     <div class="container">
+       <div class="row text-center">
+         <h1>Habilidades</h1>
+         <div class="col-sm-4">
+          <div class="grafico">
+            <div class="sombra">
+            </div>
+            <div id="porcion1" class="recorte">
+              <div class="quesito" data-rel="70"></div>
+            </div>
+          </div>
+          <p>HTML</p>
+        </div>
+         <div class="col-sm-4">
+          <div class="grafico">
+          <div class="sombra">
+          </div>
+          <div id="porcion2" class="recorte">
+            <div class="quesito" data-rel="145"></div>
+          </div>
+        </div>
+        <p>CSS</p>
+         </div>
+         <div class="col-sm-4">
+          <div class="grafico">
+            <div class="sombra">
+            </div>
+            <div id="porcion3" class="recorte">
+            <div class="quesito" data-rel="70"></div>
+          </div>
+         </div>
+         <p>Javascript</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-sm-12">
+              <a class="scroll-up button-up " onclick='subir();return false' title='Ir Arriba' href="#">
+                  <i class="fa fa-4x fa-chevron-circle-up"></i>
+                </a>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!--
     <section>
       <div class="container">
-        <div class="row">
-          
+        <div class="row text-center">
+        <h1>Habilidades</h1>
+        <div class="row text-center">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, temporibus quo aperiam unde voluptate ñLorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem praesentium dignissimos ea voluptates velit dicta, placeat labore rerum ipsa inventore nobis voluptatum sequi numquam similique explicabo. Nihil ex animi minus!</p>
+          <div class="col-sm-4 text-center"> 
+            <div class="number" data-animate="1" data-animationstart="300" data-animationduration="2000" data-animationstep="10" style="color: #78c2d4;font-size:40px;">
+                650            </div>
+          </div>
+          <div class="col-sm-4 text-center">
+            <div class="number" data-animate="1" data-animationstart="300" data-animationduration="2000" data-animationstep="10" style="color: #78c2d4;font-size:40px;">
+                650            </div>
+          </div>
+          <div class="col-sm-4 text-center">
+            <div class="number" data-animate="1" data-animationstart="300" data-animationduration="2000" data-animationstep="10" style="color: #78c2d4;font-size:40px;">
+                650            </div>
+            </div>
+          </div>
+        </div>
         </div>
       </div>
     </section>
+    -->
 
+    </div>
+    
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js' type='text/javascript'/>
+
+<div class='nav_up' id='nav_up' style='display:none;'/>
+<div class='nav_down' id='nav_down' style='display:none;'/>
+
+<script>
+//<![CDATA[
+(function(){var special=jQuery.event.special,uid1='D'+(+new Date()),uid2='D'+(+new Date()+1);special.scrollstart={setup:function(){var timer,handler=function(evt){var _self=this,_args=arguments;if(timer){clearTimeout(timer)}else{evt.type='scrollstart';jQuery.event.handle.apply(_self,_args)}timer=setTimeout(function(){timer=null},special.scrollstop.latency)};jQuery(this).bind('scroll',handler).data(uid1,handler)},teardown:function(){jQuery(this).unbind('scroll',jQuery(this).data(uid1))}};special.scrollstop={latency:300,setup:function(){var timer,handler=function(evt){var _self=this,_args=arguments;if(timer){clearTimeout(timer)}timer=setTimeout(function(){timer=null;evt.type='scrollstop';jQuery.event.handle.apply(_self,_args)},special.scrollstop.latency)};jQuery(this).bind('scroll',handler).data(uid2,handler)},teardown:function(){jQuery(this).unbind('scroll',jQuery(this).data(uid2))}}})();
+
+$(function() {
+var $elem = $('body');
+$('#nav_up').fadeIn('slow');
+$('#nav_down').fadeIn('slow'); 
+$(window).bind('scrollstart', function(){
+$('#nav_up,#nav_down').stop().animate({'opacity':'0.2'});
+});
+$(window).bind('scrollstop', function(){
+$('#nav_up,#nav_down').stop().animate({'opacity':'1'});
+});
+$('#nav_down').click(
+function (e) {
+$('html, body').animate({scrollTop: $elem.height()}, 800);
+} );
+$('#nav_up').click(
+function (e) {
+$('html, body').animate({scrollTop: '0px'}, 800);
+} );});
+//]]>
+</script>
     <script language='javascript' type='text/javascript'>    
       var arriba;
       function subir() {
