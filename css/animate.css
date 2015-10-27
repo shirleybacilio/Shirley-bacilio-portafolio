@@ -1735,6 +1735,7 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 	0% {
 		opacity: 0;
 		-webkit-transform: translateY(-2000px);
+		transform: animation(bounce 2s infinite);
 	}
 	
 	60% {
@@ -1790,6 +1791,7 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 		-o-transform: translateY(0);
 	}
 }
+
 
 @keyframes bounceInDown {
 	0% {

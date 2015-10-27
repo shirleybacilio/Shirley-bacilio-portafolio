@@ -103,6 +103,7 @@ h1{
 }
 .bg-black{
 	background-color: #4D4D4D;
+	opacity: 0.5;
 }
 .text-gray{
 	color:#F2F2F2;

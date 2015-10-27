@@ -48,6 +48,17 @@ $(function() {
 
 //fade in of my name
 
+$(document).scroll(function() {
+  var scroll = $(this).scrollTop();
+  console.log
+
+  if (scroll >= 694) {
+    $('.line').addClass("animated bounceInright");
+  } else {
+    $('.line').removeClass("animated bounceInright");
+  }
+ });
+
 $(document).scroll(function() {    
     var scroll = $(this).scrollTop();
 
@@ -61,64 +72,94 @@ $(document).scroll(function() {
 
 //modal
 $('#myModal').modal('show')
+
+
 //jumper icons
 
- $(document).scroll(function() {
-  var scroll = $(this).scrollTop();
-
-  if (scroll >= 1450) {
-    $('.saltar').addClass("animated bounce");
-  } else {
-    $('.saltar').removeClass("animated bounce");
-  }
- });
+//foto de perfil
 
 $(document).scroll(function() {
   var scroll = $(this).scrollTop();
 
-  if (scroll >= 750) {
+  if (scroll >= 800) {
     $('.profile').addClass("animated bounce");
   } else {
     $('.profile').removeClass("animated bounce");
   }
  });
 
-$(document).scroll(function() {
+ $(document).scroll(function() {
   var scroll = $(this).scrollTop();
 
-  if (scroll >=  748) {
+  if (scroll >= 800) {
+    $('.line').addClass("animated bounceInright");
+  } else {
+    $('.line').removeClass("animated bounceInright");
+  }
+ });
+
+ //skills
+
+ $(document).scroll(function() {
+  var scroll = $(this).scrollTop();
+
+  if (scroll >= 2297) {
+    $('.line').addClass("animated bounceInright");
+  } else {
+    $('.line').removeClass("animated bounceInright");
+  }
+ });
+
+//algunos  trabajos
+
+ $(document).scroll(function() {
+  var scroll = $(this).scrollTop();
+  console.log(scroll);
+
+  if (scroll >= 905) {
+
     $('.line').addClass("animated bounceInRight");
   } else {
-    $('.line').removeClass("animated bounceInRigth");
+    $('.line').removeClass("animated bounceInRight");
   }
  });
 
 $(document).scroll(function() {
   var scroll = $(this).scrollTop();
 
-  if (scroll >= 1200) {
-    $('.line').addClass("animated bounceInRight");
+  if (scroll >= 920) {
+    $('.view').addClass("animated pulse");
   } else {
-    $('.line').removeClass("animated bounceInRigth");
+    $('.view').removeClass("animated pulse");
   }
  });
 
-$(document).scroll(function() {
+
+//blog
+
+
+//contacto
+
+ $(document).scroll(function() {
+  var scroll = $(this).scrollTop();
+  
+  if (scroll >= 2378) {
+    console.log(scroll);
+    $('.line-white').addClass("animated bounceInRight");
+  } else {
+    $('.line-white').removeClass("animated bounceInRight");
+  }
+ });
+
+ //Servicios
+ $(document).scroll(function() {
   var scroll = $(this).scrollTop();
 
-  if (scroll >=1450) {
-    $('.line').addClass("animated bounceInRight");
+  if (scroll >= 2350) {
+    $('.saltar').addClass("animated bounce");
   } else {
-    $('.line').removeClass("animated bounceInRigth");
+    $('.saltar').removeClass("animated bounce");
   }
  });
 
-$(document).scroll(function() {
-  var scroll = $(this).scrollTop();
 
-  if (scroll >= 1170) {
-    $('.line', '.line-white').addClass("animated bounceInRight");
-  } else {
-    $('.line', '.line-white').removeClass("animated bounceInRigth");
-  }
- });

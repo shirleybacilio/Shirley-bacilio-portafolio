@@ -7,6 +7,7 @@ body, html{
 
 @import url(http://fonts.googleapis.com/css?family=Josefin+Slab:400,700);
 
+
 *{
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -97,8 +98,9 @@ transition: height 2s ease-in;
     background-size: 100%;
 }
 .texto-about , span{
-    font-size: 2em;
+    font-size: 1.8em;
     font-family: 'Josefin Sans', serif;
+    width: 75%;
 }
 
 h3,
@@ -135,13 +137,12 @@ h2,
 
 .scroll-down{
     color: #9B1843;
+    transition: 2s infinite;
 }
 /*SOBRE MI*/
 .about{
     background-image: url("../img/light_grey.png");
-    width: 100%;
-    background-size: 100%;
-    background-repeat: repeat;
+
 
 }
 
@@ -150,12 +151,15 @@ h2,
 }
 
 #about .profile{
-    background: url("../img/about/yo3.jpg")top center;
+    background: url("../img/about/yo3.jpg")center;
     border-radius: 100%;
     width: 370px;
     height: 370px;
     margin: auto;
     color: transparent;
+    background-size: 100%;  
+    margin: auto;
+    margin-top: 2%;
 
 }
 .comentario p{
@@ -170,6 +174,8 @@ h2,
     height: 370px;
     color: white;
     cursor: pointer;
+    padding: 5%;
+
 }
 
 /*MI TRABAJO*/
@@ -229,14 +235,24 @@ h2,
 }
 
 .view a.info {
-    background: black;
+    color: white;
+    font-size: 1.8em;
+    padding-top: 10%;
+    /* position: absolute; */
+    /* margin: 0; */
+    /* background: black; */
     display: inline-block;
     text-decoration: none;
     padding: 0;
-    text-indent: -9999px;
-    width: 20px;
-    height: 20px;
+    /* text-indent: -9999px; */
+    /* width: 20px; */
+    /* height: 20px; */
     color: white;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-size: 100%;
+
 }
 
 .third-effect:hover a.info {
@@ -311,6 +327,7 @@ h2,
 
 #servicios p{
   font-size: 16px;
+
 }
 #servicios h3{
   font-family: 'Josefin Slab';
@@ -331,6 +348,12 @@ h2,
 
 .int{
     padding-top: 15%; 
+}
+
+/*Blog*/
+
+#servicios{
+    background: url('../img/photography.png');
 }
 
 
