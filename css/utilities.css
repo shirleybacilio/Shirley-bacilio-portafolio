@@ -1,5 +1,21 @@
 /* Shortcuts */
 
+p{
+	font-family: 'Josefin Sans', serif;
+}
+
+a:hover{
+	list-style: none; 
+}
+.enlace-about {
+	color: rgb(178,6,83);
+	font-family: 'Josefin Sans';
+	list-style: none;
+}
+h1{
+	font-family: 'Josefin Slab', serif;
+
+}
 .pd-0 {
 	padding: 0;
 }
@@ -21,6 +37,7 @@
 .pd-5 {
 	padding: 5%;
 }
+
 .pd-10{
 	padding: 10%;
 }
@@ -29,6 +46,12 @@
 }
 .mg-0{
 	margin: 0;
+}
+.mg-1{
+	margin: 0.5%;
+}
+.mt-2{
+	margin-top: 2%;
 }
 .mg-auto{
 	margin: auto;

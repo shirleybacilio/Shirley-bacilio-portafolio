@@ -4,21 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Madeby @ShirleyB">
     <title>Shirley Bacilio</title>
-  | <link href="css/main.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/utilities.css" rel="stylesheet">
     <link rel="stylesheet" href="fonts/fontawesome-webfont.eot">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/utilities.css">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Comfortaa:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Slab:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,600' rel='stylesheet' type='text/css'>
     <link href="fonts/glyphicons-halfings-regular.eot" rel="stylesheet">
     <link href="fonts/glyphicons-halfings-regular.svg" rel="stylesheet">
     <link href="fonts/glyphicons-halfings-regular.ttf" rel="stylesheet">
@@ -36,8 +34,22 @@
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
   </head>
   <body>
+  <script language='javascript' type='text/javascript'>
+var arriba;
+function subir() {
+if (document.body.scrollTop != 0 || document.documentElement.scrollTop != 0) {
+window.scrollBy(0, -15);
+arriba = setTimeout('subir()', 10);
+}
+else clearTimeout(arriba);
+}
+</script>
+ <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
     <header>
-      <nav class="navbar navbar-inverse navbar-fixed-top text-uppercase">
+      <nav id="menu" class="navbar navbar-inverse navbar-fixed-top text-uppercase">
         <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
@@ -46,13 +58,13 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html"><i class="fa fa-github-alt"></i> ...Shirley</a>
+            <a class="navbar-brand" href="index.html">
+             Shirley <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABDUlEQVQ4T6WTYVEDQQyFv6eAooCiABzQc4ADigKKAg4FcAooCpDAVQHUwdVBHSzzjhyzswVmFvbXTvLyJZtkxT+PUkrnZkh6r2GllObAzIAUgQbcSurDeRJ2CwdgJ2lIKS2AB+AzcQaYCrDYQd+dA58BNk7Zal5h7daANXBVGxn6zoBL4CUMO2APnP0ALP2nBiyBpwi4l9TGZHrgKAM10eA8YWNAC9yFsJfU+F6AO0mrsD8CN6G/LgG2ryR1Ma7XL6G0LqB2jRV4nm9/bOKxoiy/96IS8ixpOQG8ON7EvGm/8bbAQtJ+BEQVhngn8ko24c5tHdA6eFzlMk38g7lHlsFnsfuD/0MecwCo7AMfKM54kerHK6sAAAAASUVORK5CYII="/></a>
           </div>
           <div class="collapse navbar-collapse" id="collapse">
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav open navbar-nav navbar-right">
               <li>
-
-                <a class="active img-circle" href="index.html">Home</a>
+                <a class="active" href="index.html">Home</a>
               </li>
               <li>
                 <a href="#about">Sobre mi</a>
@@ -61,13 +73,13 @@
                 <a href="#servicios">Servicios</a>
               </li>
               <li>
-                <a href="#habilidades">Portafolio</a>
+                <a href="#trabajos">Algunos trabajos</a>
               </li>
               <li>
                 <a href="#Blog">Blog</a>
               </li>
               <li>
-                <a href="#contact">Contact</a>
+                <a href="#contactame">Contact</a>
               </li>
             </ul>
           </div>
@@ -75,137 +87,218 @@
       </nav>
     </header>
     <div id="page_effect">
-      <section class="hero-image pt-10">
-      <div class="opacity">
-        <div id="home" class="container text-center pt-30">
-          <div class="container">
+      <section class="hero-image">
+      <video class="m-0" preload autoplay loop muted src="img/shirley.mp4" width="100%" type></video>
+        <div id="home" class="overlay container home-skew text-center">
             <div class="row">
               <div class="col-sm-12 titulo">
-                  <h1 class="animated fadeInUp">Shirley Bacilio</h1>
-                  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                  <p>"Mi creatividad vuela como los aviones, puedo construir un cerebro sin leer las instrucciones".</p>
                   <br>
-                  <a class="scroll-down animated bounceInDown" href="#about"><i class="fa fa-4x fa-chevron-circle-down"onclick='bajar();return true' title='Ir Abajo'></i></a>
+              </div>
+              <a id="nav_slow"class="wow bounceInUp scroll-down animated bounceInDown" href="#about"><i class="fa fa-4x fa-chevron-circle-down"onclick='bajar();return true' title='Ir Abajo'></i></a>
+            </div>
+        </div>
+      </div>
+      
+    </section>
+    <section id="about" class="about">
+      <div class="container text-center right pt-5 pb-5">
+        <div class="row">
+        <h1>Conóceme</h1>
+        <div class="line animated bounceInRight"></div>
+          <div class="profile img-responsive pt-5 pd-2">
+            <div class="comentario">
+              <p>24 años frescos como esmalte de uñas, amo programar y tomar fotos en movimiento, el olor a kerosene y a Batman. Me dicen gato.</p>
+              <p>Mi vida se hizo el dia en el que mi papá me dio su cámara y dijo: "Shirley,  ayudame con esto un ratito".
+              </p>
+              <p>No se la devolví jamás.</p>
+            </div>
+          </div>
+            <p class="texto-about lh pd-5">Mezcla de desarrolladora web y fotógrafa. Cuando ingresé a Laboratoria tuve miedo de que los códigos no me "entraran". Hoy puedo dar fe de que es algo que amo y algo que no quiero dejar de hacer. Cada dia me exijo a mi misma en distintas áreas del desarrollo front-end para sentirme bien con el producto que puedo entregar, pero sobretodo conmigo mismo y con toda la gente que confió para que este portafolio que lees pueda funcionar.
+            <br>
+            No recuerdo exactamente la hora en la que desperté a las 3am porque estaba soñando con un codigo que tenía que hacer, pero cuando eso pasó entendí que esto es lo que quiero hacer. Si quieres saber algo más de este hibrido coder photographer, <a class="enlace-about" href="#contactame">¿que te parece si nos tomamos un café?</a>
+            </p>
+        </div>
+      </div>      
+    </section>
+    <section id="trabajos">
+        <div class="container text-center pt-5">
+          <div class="row pb-5">
+            <h1>Mi trabajo</h1>
+            <div class="line animated bounceInRight"></div>
+          </div>
+          <div class="row">
+          <div class="col-sm-4">
+            <div class="dashy"></div>
+              <div class="view third-effect">
+               <img src="img/chambas/dashy.jpg">
+                  <div class="mask">
+                <a href="#" class="info" title="Full Image"><p>Dashy</p></a>
               </div>
             </div>
           </div>
+            <div class="col-sm-4">
+              <div class="view third-effect">
+              <img src="img/chambas/deli.jpg">
+                  <div class="mask">
+                <a href="#" class="info" title="Full Image"><p>Delinatur</p></a>
+              </div>
+            </div>
+            </div>
+            <div class="col-sm-4"> 
+              <div class="view third-effect">
+              <img src="img/chambas/flat.jpg">
+                  <div class="mask">
+                <a href="#" class="info" title="Full Image">Flat themes</a>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="view third-effect">
+              <img src="img/chambas/freelancer.jpg">
+                  <div class="mask">
+                   <a href="#" class="info" title="Full Image">Freelancer</a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="view third-effect">
+              <img src="img/chambas/pretty.jpg">
+                  <div class="mask">
+                <a href="#" class="info" title="Full Image">Prettify</a>
+              </div>
+            </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="view third-effect">
+              <img src="img/chambas/sdanza.jpg">
+                  <div class="mask">
+                <a href="#" class="info" title="Full Image">Escuela de danza</a>
+              </div>
+            </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-    <section id="about" class="about">
-      <div class="container text-center pt-5 pb-5">
-        <div class="row">
-        <h3 class="pt-5">Sobre mi</h3>
-          <img class="img-responsive pt-5 pb-5" src="img/about/yo3.jpg" alt="soy-yo">
-            <p class="pb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est in, obcaecati nulla amet distinctio, sapiente itaque porro neque at laudantium temporibus quam magnam. Animi rem maxime, autem quaerat, facilis porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sint harum sed, aliquam odit aperiam deleniti quae ut dolore. Magni quibusdam, laudantium facere voluptates cum saepe atque fugiat vero commodi.</p>
-        </div>
-      </div>      
     </section>
     <section id="servicios">
       <div class="container text-center">
         <div class="row">
           <div class="col-sm-12">
-             <h2>Servicios</h2>
-             <p>Amo programar</p>
+             <h1>Servicios</h1>
+             <div class="line animated bounceInRight"></div>
+             <br>
+             <p class="texto-about">Amo programar</p>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-6">
-            <a href="#"><i class="fa fa-5x fa-code"></i></a>
+        <div class="row pt-5 pd-5">
+          <div class="col-sm-12">
+            <a href="#"><i class="fa saltar fa-file-code-o"></i></a>
+            <a href="#"><i class="fa saltar fa-4x fa-plus"></i></a>
+            <a href="#"><i class="fa saltar fa-camera-retro"></i></a>
+          </div>
+          <div class="col-sm-6 text-center">
             <h3>Desarrollo Web</h3>
+            <span>Mi sueño es hacer páginas que nadie tenga. y que sean referencias como las que veo todos los dias. <i class="fa fa-heart"></i>
+            <br>
+            Puedo hacer que tus proyectos se vean desde cualquier dispositivo móvil.
+           </span>
           </div>
-          <div class="col-sm-6">
-            <a href="#"><i class="fa fa-4x fa-desktop"></i>   
-            <i class="fa fa-5x fa-mobile"></i></a>
-            <h3>Diseño Responsive</h3>
-          </div>
-        </div>
-        <div class="row int">
-          <div class="col-sm-6">
-           <a href="#"><i class="fa  fa-5x fa-life-ring"></i></a> 
-            <h3>Maquetación</h3>
-          </div>
-          <div class="col-sm-6">
-           <a href="#"><i class="fa  fa-5x fa-camera-retro"></i></a> 
+          <div class="col-sm-6 text-center">
             <h3>Fotografía</h3>
+            <span>Hago fotografía para ser feliz, es mi secreto anti - stress. La luz es mi mejor amiga a la hora de capturar. Hago foto periodismo.
+            </span>
           </div>
         </div>
       </div>
     </section>
-    <section id="habilidades" class="bg-gray">
-     <div class="container">
-       <div class="row text-center">
-         <h1>Habilidades</h1>
-         <div class="col-sm-4">
-          <div class="grafico">
-            <div class="sombra">
-            </div>
-            <div id="porcion1" class="recorte">
-              <div class="quesito" data-rel="70"></div>
-            </div>
+    <section id="Blog">
+      <div class="container text-center pt-5">
+        <div class="row">
+        <div class="col-sm-12 pb-5">
+             <h1>Blog</h1>
+             <div class="line animated bounceInRight"></div>
+             <p class="texto-about">Amo escribir</p>
           </div>
-          <p>HTML</p>
-        </div>
-         <div class="col-sm-4">
-          <div class="grafico">
-          <div class="sombra">
-          </div>
-          <div id="porcion2" class="recorte">
-            <div class="quesito" data-rel="145"></div>
-          </div>
-        </div>
-        <p>CSS</p>
-         </div>
-         <div class="col-sm-4">
-          <div class="grafico">
-            <div class="sombra">
-            </div>
-            <div id="porcion3" class="recorte">
-            <div class="quesito" data-rel="70"></div>
-          </div>
-         </div>
-         <p>Javascript</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section>
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-sm-12">
-              <a class="scroll-up button-up " onclick='subir();return false' title='Ir Arriba' href="#">
-                  <i class="fa fa-4x fa-chevron-circle-up"></i>
-                </a>
-        </div>
-      </div>
-    </div>
-  </section>
-    <!--
-    <section>
-      <div class="container">
-        <div class="row text-center">
-        <h1>Habilidades</h1>
-        <div class="row text-center">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, temporibus quo aperiam unde voluptate ñLorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem praesentium dignissimos ea voluptates velit dicta, placeat labore rerum ipsa inventore nobis voluptatum sequi numquam similique explicabo. Nihil ex animi minus!</p>
-          <div class="col-sm-4 text-center"> 
-            <div class="number" data-animate="1" data-animationstart="300" data-animationduration="2000" data-animationstep="10" style="color: #78c2d4;font-size:40px;">
-                650            </div>
-          </div>
-          <div class="col-sm-4 text-center">
-            <div class="number" data-animate="1" data-animationstart="300" data-animationduration="2000" data-animationstep="10" style="color: #78c2d4;font-size:40px;">
-                650            </div>
-          </div>
-          <div class="col-sm-4 text-center">
-            <div class="number" data-animate="1" data-animationstart="300" data-animationduration="2000" data-animationstep="10" style="color: #78c2d4;font-size:40px;">
-                650            </div>
+          <div class="row post mg-1 pd-2">
+            
+             <div class="col-sm-2">
+              <img src="http://laboratoria.la/app/assets/img/logocodeacademy.png" alt="laboratoria">
+              </div>
+              <div class="col-sm-10 pd-2 bg-gray">
+              <h3>Laboratoria con L de logro</h3>
+              <blockquote>El mundo y la vida están llenas de oportunidades, todas diferentes. Sin embargo, pocas son las oportunidades que pueden cambiar vidas, y la oportunidad que se me dio a mi es Laboratoria. <a href="https://medium.com/@shirleybacilio/lima-21-de-setiembre-del-2015-360bc287b86a#.lw0vhy460">Ver Más</a></blockquote>
             </div>
           </div>
-        </div>
+          <div class="row post mg-1 pd-2">
+            <div class="col-sm-2">
+              <img src="https://cdn-images-1.medium.com/max/1080/1*RmYNTQcV2h7sp6cHxqOI1Q.jpeg" alt="fresas">
+            </div>
+            <div class="col-sm-10 pd-2 bg-gray">
+              <h3>El norte y el portafolio</h3>
+              <blockquote>Definitivamente, fue un viaje maravilloso, en que me libré del estrés y de muchos estereotipos tontos sobre tales lugares, pensaba que me aburriría camino allá porque antes en la infancia, recuerdo que no había nada que ver. Ahora si lo disfruté mucho, es mas, los invito a pasear por allá, es maravilloso. <a href="https://medium.com/@shirleybacilio/el-norte-y-el-portafolio-139a2d42edae#.zb455k92i">Ver Más</a></blockquote>
+            </div>
+          </div>
+          <div class="row post mg-1 pd-2">
+            <div class="col-sm-2">
+              <img src="https://cdn-images-1.medium.com/max/720/1*yfymKSfeStzZ6p5eUOxwfw.png" alt="">
+            </div>
+            <div class="col-sm-10 pd-2 bg-gray">
+              <h3>Sin titulos</h3>
+              <blockquote>Todo el tiempo conocemos personas, algunas buenas, otras malas, otras son simplemente… son como son. Sin embargo, hay algunas pueden marcar tu vida de una manera, esta también puede ser buena, o mala, o tal como es. <a href="https://medium.com/@shirleybacilio/sin-t%C3%ADtulos-6b751e18c7da#.1zagq8yvq">Ver Más</a></blockquote>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    -->
-
+   <section id="contactame" class="contacto"> 
+  <div class="container text-center">
+     <div class="row">
+        <div class="col-sm-12 text-center pt-5">
+         <h1>Contáctame</h1>
+         <div class="line-white animated bounceInRight"></div>
+        </div>
+      </div>
+       <div class="row">
+        <div class="container">
+         <div class="col-sm-6 tarjeta">
+              <div class="sociales pt-5">
+                  <a href=""><i class="fa fa-github"></i></a>
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-instagram"></i></a>
+                  <a href=""><i class="fa fa-flickr"></i></a>
+                  <a href=""><i class="fa fa-youtube"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+              </div>
+               <h3>Chorrillos, Lima - Perú</h3>
+               <p>TLF: (+51) 991 050 291</p>
+               <p>shirleybacilio@gmail.com</p>
+         </div>
+          <div class="col-sm-6">
+            <form class="pb-5 pt-5">  
+            <div class="form-group"> 
+              <input class="form-control" type="name" placeholder="Name">
+            </div>
+            <div class="form-group"> 
+                <input class="form-control" type="e-mail" placeholder="E-mail">
+            </div>
+           <div class="form-group">  
+              <input class="form-control" type="text" placeholder="Phone number">
+           </div>
+           <div class="form-group">  
+               <textarea class="form-control" type="text" placeholder="Message" name="text" id="" cols="30" rows="10"></textarea>
+           </div>
+           <div id="progress-button" class="progress-button">
+            <button class="btn-default btn " type="submit">
+            Send
+          </button>
+            </form>
+          </div>
+      </div>
     </div>
+  </div>
+</section>
     
 <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js' type='text/javascript'/>
 
@@ -214,7 +307,6 @@
 
 <script>
 //<![CDATA[
-(function(){var special=jQuery.event.special,uid1='D'+(+new Date()),uid2='D'+(+new Date()+1);special.scrollstart={setup:function(){var timer,handler=function(evt){var _self=this,_args=arguments;if(timer){clearTimeout(timer)}else{evt.type='scrollstart';jQuery.event.handle.apply(_self,_args)}timer=setTimeout(function(){timer=null},special.scrollstop.latency)};jQuery(this).bind('scroll',handler).data(uid1,handler)},teardown:function(){jQuery(this).unbind('scroll',jQuery(this).data(uid1))}};special.scrollstop={latency:300,setup:function(){var timer,handler=function(evt){var _self=this,_args=arguments;if(timer){clearTimeout(timer)}timer=setTimeout(function(){timer=null;evt.type='scrollstop';jQuery.event.handle.apply(_self,_args)},special.scrollstop.latency)};jQuery(this).bind('scroll',handler).data(uid2,handler)},teardown:function(){jQuery(this).unbind('scroll',jQuery(this).data(uid2))}}})();
 
 $(function() {
 var $elem = $('body');
